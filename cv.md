@@ -8,9 +8,8 @@
 
  - **Phone:** +375(29)712-06-71
  - **E-mail** nastya.avmochkina@gmail.com
- - **Telegram** @NastyaAvmo
- - **Discord** nastiya#4925
- - **GitHub**  avmochkina
+ - **Telegram** [@NastyaAvmo](https://t.me/NastyaAvmo)
+ - **GitHub**  [avmochkina](https://github.com/avmochkina)
 
 _____
 
@@ -31,3 +30,30 @@ _______
  _________
  
  ### Code example
+ 
+ ```
+ 
+ function sum(a,b) {
+   return a + b;
+ }
+ 
+ let result = sum(1, 2);
+ alert( result );
+ 
+ ```
+ ________
+ 
+ ### Education
+ 
+  - RS School Course "JavaScript/Front-end. Stage 1" (*in progress)
+  - IT College Digital Unicorn UX/UI design (*2020 - 2021*)
+  - Belarusian State University. Bioecology (*2003 - 2008*)
+  
+  ________
+  
+  ### Languages
+  
+   - **English** - B1
+   - **Russian** - native speaker
+
+______________
