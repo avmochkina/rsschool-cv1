@@ -43,7 +43,7 @@ function countCats(matrix) {
    }
  }
  return cats;
-}
+
  
  ```
  ________
