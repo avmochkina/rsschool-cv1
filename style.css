@@ -1,17 +1,221 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.left {
-  text-align: left;
-  color: black;
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
-</style>
-</head>
-<body>
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: inherit;
+    font-size: inherit;
+}
+/**/
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+body {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #dae4c3;
+  background-color: #073850;
+}
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+}
+[class*="__container"] {
+  max-width: 1087px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+/*Header*/
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 114px;
+  align-items: center;
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+.menu {
+  display: flex;
+  justify-content: end;
+}
+.menu__list {
+  display: flex;
+}
+.menu__item {
+  margin: 0 40px 0 0;
+}
+.menu__link {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #dae4c3;
+}
+.menu__link:hover {
+  text-decoration: underline;
+  font-weight: 800;
+}
+/*Introduction*/
+.introduction {}
+.introduction__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding: 150px 15px 50px 15px;
+}
+.introduction__content {
+  flex: 0 1 50%;  
+}
+.introduction__block-text {
+  max-width: 410px;
+}
+.introduction__title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 130%;
+  color: #dae4c3;
+  margin-bottom: 16px;
+}
+.introduction__text {
+  font-size: 16px;
+  line-height: 160%;
+  margin-bottom: 34px;
+  letter-spacing: 1px;
+}
+.introduction__button {
 
-<h1 class="left">Red and center-aligned heading</h1>
-<p class="left">Red and center-aligned paragraph.</p> 
+}
+.button {
+  display: inline-block;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  color: #dae4c3;
+  padding: 18px 46px;
+  background-color: #073850;
+  border: 1px solid #dae4c3;
+  border-radius: 6px;
+  transition: background-color 0.3s ease 0s;
+}
+.button:not(:last-child) {
+  margin-right: 40px;  
+}
+.button:hover {
+  background-color: #dae4c3;
+  color: #073850;
 
-</body>
-</html>
+}
+.introduction__image {
+  flex: 0 1 50%;
+  position: relative;
+  z-index: 2;
+}
+.introduction__image img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+/*MyCode*/
+.mycode {
+  background-color: #1e1e1e;
+}
+.mycode__container {
+  padding: 60px 0;
+}
+.mycode__container p {
+  margin-bottom: 8px;
+}
+.mycode__example {}
+.mycode__example_blue {
+  color: #4d86b5;
+}
+.mycode__example_yellow {
+  color: #ffd700;
+}
+.mycode__example_light-blue {
+  color: #97cadc;
+}
+.mycode__example_green {
+  color: #b3c393
+}
+.mycode__example_white {
+  color: #d4d4d4
+}
+.mycode__example_violet {
+  color: #be86c0
+}
+/*Footer*/
+.footer {
+  padding: 20px 0;
+}
+.footer__container {}
+.footer__items {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.footer__item-mylink {}
+.footer__item-mylink_github {}
+.footer__item-rslink {
+  align-items: center;
+  display: flex;
+}
+.footer__item-text {
+  font-size: 16px;
+  color: #dae4c3;
+}
+.footer__item-text:not(:last-child) {
+  margin-right: 12px;
+}
+.footer__item-rslink_link-school  img {
+  width: 100px;
+  margin-right: 12px;
+}
+
