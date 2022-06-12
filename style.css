@@ -62,7 +62,8 @@ h2 {
 }
 /*Header*/
 .header {
-  position: absolute;
+  position: fixed;
+  background-color: #073850;
   width: 100%;
   top: 0;
   left: 0;
@@ -70,7 +71,7 @@ h2 {
 }
 .header__container {
   display: flex;
-  min-height: 114px;
+  min-height: 80px;
   align-items: center;
 }
 .header__menu {
@@ -83,8 +84,8 @@ h2 {
 .menu__list {
   display: flex;
 }
-.menu__item {
-  margin: 0 40px 0 0;
+.menu__item:not(:last-child) {
+  margin-right: 40px;
 }
 .menu__link {
   font-family: "Open Sans";
@@ -162,17 +163,36 @@ h2 {
   border-radius: 50%;
   max-width: 100%;
 }
+/*MyWorks*/
+.my-works {}
+.my-works__container p {
+  margin-bottom: 8px;
+}
+.works {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.works__item:not(:last-child) {
+  margin-right: 20px;
+}
+.works__item-link {}
+.works__item-img {
+  width: 100%;
+  border-radius: 8px;
+}
 /*MyCode*/
 .mycode {
-  background-color: #1e1e1e;
 }
 .mycode__container {
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .mycode__container p {
   margin-bottom: 8px;
 }
-.mycode__example {}
+.mycode__example {
+  background-color: #1e1e1e;
+}
 .mycode__example_blue {
   color: #4d86b5;
 }
@@ -190,6 +210,9 @@ h2 {
 }
 .mycode__example_violet {
   color: #be86c0
+}
+.mycode__example_orange {
+  color: #e79f4d
 }
 /*Footer*/
 .footer {
