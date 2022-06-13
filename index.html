@@ -1,62 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV</title>
 </head>
 <body>
-  <h1>Anastasiya Avmochkina</h1>
-  <h3>Junior Frontend Developer</h3>
-  <h3>Contact information:</h3>
-  <ul>
-    <li>
-      <h3>Phone:</h3>
-      <a href="+375(29)712-06-71" >+375(29)712-06-71</a>
-    </li>
-    <li>
-      <h3>E-mail</h3>
-      <a href="+375(29)712-06-71" >nastya.avmochkina@gmail.com</a>
-    </li>
-    <li>
-      <h3>Telegram</h3>
-      <a href="https://t.me/NastyaAvmo" >NastyaAvmo</a>
-    </li>
-    <li>
-      <h3>GitHub</h3>
-      <a href="https://github.com/avmochkina" >avmochkina</a>
-    </li>
-  </ul>
-  <h3>About Me</h3>
-  <p>My privious job leaded me to stagnation and I think that I need to change something. I'm interested in design and web development. That's why I decided to choose the field of front-end development. My goal is to gain knowledge and become a frontend developer. Flexibility and desire to learn are my strengths. Also  I'm an excellent team worker.</p>
-  <h3>Skills</h3>
-  <ul>
-    <li>HTML5, CSS3</li>
-    <li>JavaScript Basics</li>
-    <li>Git, GitHub</li>
-    <li>VS Code</li>
-  </ul>
-  <h3>Education</h3>
-  <ul>
-    <li>RS School Course "JavaScript/Front-end. Stage 1" (*in progress)</li>
-    <li>IT College Digital Unicorn UX/UI design (*2020 - 2021*)</li>
-    <li>Belarusian State University. Bioecology (*2003 - 2008*)</li>
-  </ul>
-  <h3>Languages</h3>
-  <ul>
-    <li>
-      <h6>English</h6>
-      <p>B1</p>
-    </li>
-    <li>
-      <h6>Russian</h6>
-      <p>native speaker</p>
-    </li>
-  </ul>
-  
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">Anastasiya Avmochkina</div>
+        <div class="header__menu menu">
+          <nav id="menu" class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="#About-me" class="menu__link">About me</a></li>
+              <li class="menu__item"><a href="#My-Works" class="menu__link">My works</a></li>
+              <li class="menu__item"><a href="#Contacts" class="menu__link">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="introduction">
+        <div class="introduction__container">
+          <div class="introduction__content">
+            <div class="introduction__block-text">
+              <h1 class="introduction__title">
+                  Anastasiya Avmochkina  
+              </h1>
+              <div class="introduction__text">
+                <p><b>Junior frontend developer. </b></br>I'm always up for a challenge and now I'm looking for a place where I can continue to grow and learn.</p>
+              </div>  
+              <a href="" class="introduction__button button">See my works</a>
+            </div>
+            <div class="introduction__image">
+              <img src="./img/ava1.jpg" alt="Anastasiya Avmochkina">
+            </div>
+          </div>
+        </div>  
+      </section>
+      <section class="contacts" id="Contacts">
+        <div class="contacts__container">
+          <p>How you can contact me</p>
+          <h2>Social links</h2>
+          <ul class="contacts__list">
+            <li class="contact__item">
+              <a href="https://github.com/avmochkina" target="_blank" class="contact__item-link">
+                <img src="./img/github.svg" alt="GitHub link" class="contact__item-link_img">
+                <h3>GitHub</h3>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="https://discordapp.com/users/952919775707803669/" target="_blank" class="contact__item-link">
+                <img src="./img/discord.svg" alt="Discord link" class="contact__item-link_img">
+                <h3>Discord</h3>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="https://t.me/NastyaAvmo" target="_blank"class="contact__item-link">
+                <img src="./img/telegram.svg" alt="Telegram link" class="contact__item-link_img">
+                <h3>Telegram</h3>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B9vvksLnjTbOjLa0Meaec7w%3D%3D" target="_blank" class="contact__item-link">
+                <img src="./img/linkedin.svg" alt="LinkedIn link" class="contact__item-link_img">
+                <h3>LinkedIn</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-me" id="About-me">
+        <div class="about-me__container">
+          <p>Who I am</p>
+          <h2>About me</h2>
+          <div class="about-me__body">
+            <div class="about-me__content">
+              <div class="about-me__content_text">
+                <p> It happened  that I got interested in design and web development, so I finished a design course in 2021. Thanks to that I have acquired some knowledge of HTML and CSS, design systems and UX patterns.Now my focus is on front-end development and RS School helps me to learn it. I'm willing to study and become an excellent front-end developer. I'm excited about what I've been working on.</p>
+              </div>
+              <div class="about-me__content_video">
+                <iframe src="https://www.youtube.com/embed/kA8hGnATUrY" title="YouTube video player" frameborder="0" ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="about-me__skills">
+            <h2>Hard skills</h2>
+            <ul class="skills__list">
+              <li class="skill__list-item">
+                <p class="skill">HTML 5</p>
+              </li>
+              <li class="skill__list-item">
+                <p class="skill">CSS 3</p>
+              </li>
+              <li class="skill__list-item">
+                <p class="skill">JavaScript ES6 Basic</p>
+              </li>
+              <li class="skill__list-item">
+                <p class="skill">Nodejs Basic</p>
+              </li>
+              <li class="skill__list-item">
+                <p class="skill">Figma</p>
+              </li>
+              <li class="skill__list-item">
+                <p class="skill">BEM</p>
+              </li>
 
+          </div>
+          <div class="about-me__education">
+            <h2>Education and courses</h2>
+            <ul class="education__list">
+              <li class="education__list-item">
+                <p class="education__year">in progress</p>
+                <p class="education__place">RS School Course "JavaScript/Front-end. Stage 0</p>
+              </li>
+              <li class="education__list-item">
+                <p class="education__year">2020 - 2021</p>
+                <p class="education__place">IT College Digital Unicorn UX/UI design</p>
+              </li>
+              <li class="education__list-item">
+                <p class="education__year">2003 - 2008</p>
+                <p class="education__place">Belarusian State University. Bioecology</p>
+              </li>
+            </ul>
+          </div>
+          <div class="about-me__language">
+            <h2>Languages</h2>
+            <div class="languages__list">
+              <div class="languages__list-item">
+                <div class="language__title">English</div>
+                <div class="language__level">Intermediate</div>
+              </div>
+              <div class="languages__list-item">
+                <div class="language__title">Russian</div>
+                <div class="language__level">Native</div>
+              </div>
+              <div class="languages__list-item">
+                <div class="language__title">Belarussian</div>
+                <div class="language__level">Fluent</div>
+              </div>
 
-  
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-works" id="My-Works">
+        <div class="my-works__container">
+          <p>What I do</p>
+          <h2>My works:</h2>
+          <div class="works">
+            <article class="works__item">
+              <a href="https://avmochkina.github.io/GoCorona/"class="works__item-link" target="_blank">
+                <img src="./img/Gocorona.png" alt="GoCorona App" class="works__item-img">
+              </a>
+            </article>
+            <article class="works__item">
+              <a href="https://rolling-scopes-school.github.io/avmochkina-JSFE2022Q1/SHELTER/pages/main/index.html"class="works__item-link" target="_blank">
+                <img src="./img/Shelter.png" alt="Shelter" class="works__item-img">
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="mycode">
+        <div class="mycode__container">
+          <p>My code style</p>
+          <h2>Code example:</h2>
+          <div class="mycode__example">
+            <pre>
+              <code>
+                <span class="mycode__example_blue">function</span> <span class="mycode__example_green">countCats</span><span class="mycode__example_yellow">(</span><span class="mycode__example_light-blue">matrix</span><span class="mycode__example_yellow">)</span> <span class="mycode__example_yellow">{</span></br>
+                  <span class="mycode__example_blue">let </span><span class="mycode__example_light-blue">cats</span> <span class="mycode__example_white">=</span> <span class="mycode__example_green">0</span><span class="mycode__example_white">;</span></br>
+                  <span class="mycode__example_violet">for (</span><span class="mycode__example_blue">let</span> <span class="mycode__example_light-blue">i</span> <span class="mycode__example_white">=</span> <span class="mycode__example_green">0</span><span class="mycode__example_white">;</span> <span class="mycode__example_light-blue">i</span> <span class="mycode__example_white"><</span> <span class="mycode__example_light-blue">matrix</span><span class="mycode__example_white">.</span><span class="mycode__example_light-blue">length</span><span class="mycode__example_white">;</span> <span class="mycode__example_light-blue">i</span><span class="mycode__example_white">++</span><span class="mycode__example_violet">) {</span></br>
+                    <span class="mycode__example_violet">for</span> <span class="mycode__example_blue">(let</span> <span class="mycode__example_light-blue">j</span> <span class="mycode__example_white">=</span> <span class="mycode__example_green">0</span><span class="mycode__example_white">;</span> <span class="mycode__example_light-blue">j</span><span class="mycode__example_white"><</span> <span class="mycode__example_light-blue">matrix</span><span class="mycode__example_yellow">[</span><span class="mycode__example_light-blue">i</span><span class="mycode__example_yellow">]</span><span class="mycode__example_white">.</span><span class="mycode__example_light-blue">length</span><span class="mycode__example_white">;</span> <span class="mycode__example_light-blue">j</span><span class="mycode__example_white">++</span><span class="mycode__example_blue">) {</span></br>
+                      <span class="mycode__example_violet">if</span> <span class="mycode__example_yellow">(</span><span class="mycode__example_light-blue">matrix</span><span class="mycode__example_violet">[</span><span class="mycode__example_light-blue">i</span><span class="mycode__example_violet">][</span><span class="mycode__example_light-blue">j</span><span class="mycode__example_violet">]</span> <span class="mycode__example_white">===</span> <span class="mycode__example_orange">'^^'</span><span class="mycode__example_yellow">) {</span></br>
+                        <span class="mycode__example_light-blue">cats</span><span class="mycode__example_white">++;</span></br>
+                        <span class="mycode__example_yellow">}</span></br>
+                        <span class="mycode__example_blue">}</span></br>
+                    <span class="mycode__example_violet">}</span></br>
+                  <span class="mycode__example_violet">return</span> <span class="mycode__example_light-blue">cats</span><span class="mycode__example_white">;</span></br>
+                  <span class="mycode__example_yellow">}</span>  
+              </code>
+            </pre>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__items">
+          <div class="footer__item-mylink">
+            <a href="https://github.com/avmochkina" class="footer__item-mylink_github" target="_blank">
+              <p class="footer__item-text"> my GitHub</p> 
+            </a>
+          </div>
+          <div class="footer__item-rslink">
+            <p class="footer__item-text">Made with love to</p>
+            <a href="https://rs.school/js/" class="footer__item-rslink_link-school" target="_blank">
+              <img src="./img/RS-school-logo.png" alt="RS school logo" >
+            </a>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
