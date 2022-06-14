@@ -144,7 +144,7 @@ p {
 }
 .introduction__content {  
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -212,10 +212,6 @@ p {
     flex: 1 1 100%;
     margin-bottom: 20px;
   }
-  .introduction__image img {
-    max-width: 460px;
-  }
-  
   .introduction__block-text {
     max-width: 100%;
     flex: 1 1 100%;
@@ -459,4 +455,8 @@ pre code {
   width: 100px;
   margin-right: 12px;
 }
-
+@media (max-width: 767.98px) {
+  .footer__item-text {
+    font-size: 10px;
+  }
+}
