@@ -29,10 +29,10 @@ _______
 
 ### Skills
 
- - HTML5, CSS3
- - JavaScript Basics
+ - HTML5
+ - CSS3/ Sass
+ - JavaScript
  - Git
- - VS Code
  
  _________
  
@@ -57,6 +57,7 @@ function countCats(matrix) {
  
  ### Education
  
+  - Webcademy "JavaScript React разработчик" (27.03.2023)
   - RS School Course "JS/FE PRE-SCHOOL 2022Q2 (JAVASCRIPT)" (04.09.2022)
   - IT College Digital Unicorn UX/UI design (*2020 - 2021*)
   - Belarusian State University. Bioecology (*2003 - 2008*)
